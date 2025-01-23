@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exchange Rate Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter Javascript</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <script src="script.js"></script>
+  <img src="img/curlogo.svg" class="logo"/>
+  <h1>Currency Converter</h1>
+  <div class="container">
+        <label for="amount-one" class="label-amount">Amount</label>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+    <div class="form-vert-line">
+      <div class="currency">
+        <label for="curr-one" class="label-from">From</label>
+        <select id="curr-one">
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP" selected>GBP</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="ISK">ISK</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PHP">PHP</option>
+          <option value="PLN">PLN</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="USD">USD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+      </div>
+        <button class="btn" id="btn-swap">
+          <img src="img/swapdart.png" alt="swap icon" width="80px">
+        </button>  
+      <div class="currency">
+        <label for="curr-two" class="label-from">To</label>
+        <select id="curr-two">
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="CZK" selected>CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="ISK">ISK</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PHP">PHP</option>
+          <option value="PLN">PLN</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="USD">USD</option>
+          <option value="ZAR">ZAR</option>
+        </select> 
+      </div>
+    </div>
+      <button class="btn" id="btn-con">Convert</button>
+      <div class="result-cur" id="result-info"></div>
+      <div class="result-value">
+        <input type="number" id="amount-two" placeholder=""/> 
+        <div class="only-cur" id="only-cur"></div>
+      </div>
+      <!-- tady neni value protoze to generuje JS-->
+      <div class="rate" id="rate"></div>
+    </div>
+  
+  <script src="script.js"></script>
+
+  
 </body>
 </html>

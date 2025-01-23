@@ -1,0 +1,128 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color: #243F91;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    background: rgb(37,60,145);
+    background: linear-gradient(0deg, rgba(37,60,145,1) 0%, rgba(30,168,224,1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .logo{
+    width: 300px;
+  }
+  h1{
+    color: var(--primary-color);
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-top: 0;
+  }
+  .btn{
+    border: none;
+    background: none;
+  }
+  select:focus, input:focus, button:focus{
+    outline: 0;
+  }
+  input, label{
+    display: block; /*label on the top of input*/
+    color: var(--primary-color);
+  }
+  label{
+    margin-bottom: 5px;
+  }
+  .container{
+    max-width: 400px;
+  }
+  .form-vert-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  .currency select{
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none; /*rusis default for mac*/
+    -webkit-appearance: none; /*pro chrome*/
+    appearance: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    background-image: url('img/dartdown.png');
+    background-position: right 5px top 50%, 0, 0;
+    background-size: 20px auto, 100%;
+    background-repeat: no-repeat;
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  #amount-one{
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: transparent;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  #amount-two{
+    display: none;
+  }
+  #btn-swap{
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  #btn-con{
+    border: none;
+    border-radius: 10px;
+    background-color: #00E1FF;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    margin: 20px 0 50px 0;
+    width: 100%;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+  #btn-con:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 10px #00E1FF,
+                0 0 20px #00E1FF,
+                0 0 30px #00E1FF;
+  }
+  .result-cur{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .result-value{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .only-cur{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    margin: 35px;
+  }
+  .rate{
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  
