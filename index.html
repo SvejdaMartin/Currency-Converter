@@ -10,8 +10,8 @@
   <img src="img/curlogo.svg" class="logo"/>
   <h1>Currency Converter</h1>
   <div class="container">
-        <label for="amount-one" class="label-amount">Amount</label>
-        <input type="number" id="amount-one" placeholder="0" value="1" />
+    <label for="amount-one" class="label-amount">Amount</label>
+    <input type="number" id="amount-one" placeholder="0" value="1" />
     <div class="form-vert-line">
       <div class="currency">
         <label for="curr-one" class="label-from">From</label>
@@ -51,9 +51,9 @@
           <option value="ZAR">ZAR</option>
         </select>
       </div>
-        <button class="btn" id="btn-swap">
-          <img src="img/swapdart.png" alt="swap icon" width="80px">
-        </button>  
+      <button class="btn" id="btn-swap">
+        <img src="img/swapdart.png" alt="swap icon" width="80px">
+      </button>  
       <div class="currency">
         <label for="curr-two" class="label-from">To</label>
         <select id="curr-two">
@@ -93,18 +93,14 @@
         </select> 
       </div>
     </div>
-      <button class="btn" id="btn-con">Convert</button>
-      <div class="result-cur" id="result-info"></div>
-      <div class="result-value">
-        <input type="number" id="amount-two" placeholder=""/> 
-        <div class="only-cur" id="only-cur"></div>
-      </div>
-      <!-- tady neni value protoze to generuje JS-->
-      <div class="rate" id="rate"></div>
+    <button class="btn" id="btn-con">Convert</button>
+    <div class="result-cur" id="result-info"></div>
+    <div class="result-value">
+      <input type="number" id="amount-two" placeholder="" disabled /> 
+      <div class="only-cur" id="only-cur"></div>
     </div>
-  
+    <div class="rate" id="rate"></div>
+  </div>
   <script src="script.js"></script>
-
-  
 </body>
 </html>
