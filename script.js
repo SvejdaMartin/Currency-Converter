@@ -30,7 +30,6 @@ async function fetchExchangeRates() {
 }
 
 // Vypočítat směnný kurz a aktualizovat DOM
-// Vypočítat směnný kurz a aktualizovat DOM
 function calculateExchange() {
   const amount = parseFloat(amountOne.value);
   const currOne = currencyOne.value;
