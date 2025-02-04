@@ -54,7 +54,7 @@ function calculateExchange() {
 }
 
 
-// Prohodit měny
+// Change currency
 function swapCurrencies() {
   const tempCurrency = currencyOne.value;
   currencyOne.value = currencyTwo.value;
